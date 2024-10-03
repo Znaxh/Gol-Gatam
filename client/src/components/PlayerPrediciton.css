@@ -1,0 +1,83 @@
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown-container label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+select {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 2px solid #164c3e; /* Green border */
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  appearance: none; /* Removes default styling (for a cleaner look) */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-size: 16px;
+}
+
+select option {
+  background-color: #1c1c1c; /* Match background with dropdown */
+  color: #ffffff; /* White text */
+  padding: 10px;
+}
+
+select:focus, 
+select:hover {
+  border-color: #164c3e; /* Green border on hover/focus */
+}
+
+.prediction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Make the predicted values bigger and bold */
+.predicted-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.predicted-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a9;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.predicted-value:hover {
+  color: #e94;
+  transform: scale(1.2);
+}
+
+.predicted-value span {
+  color: #cccccc;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+

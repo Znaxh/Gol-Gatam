@@ -1,0 +1,40 @@
+name: React Client CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version to use
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./client
+
+      - name: Run tests
+        run: npm test -- --coverage
+        working-directory: ./client
+
+      - name: Build
+        run: npm run build
+        working-directory: ./client
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-build
+          path: ./client/build

@@ -1,0 +1,129 @@
+
+/* Overall dark background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c; /* Dark Gray Background */
+  color: #ffffff; /* White Text */
+}
+
+/* Search bar styling */
+.search-bar-container {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.search-input {
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  background-color: #333333; /* Darker background for input */
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #164c3e; /* Dark Green */
+  box-shadow: 0 0 15px rgba(22, 76, 62, 0.5); /* Slight Green glow */
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #164c3e; /* Dark Green */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #1f6f56; /* Lighter Green on hover */
+}
+
+/* Update general container styles for sleek look */
+.container {
+  min-height: 100vh;
+  background-color: #1c1c1c; /* Background matching the screenshot */
+  padding: 3rem 2rem;
+}
+
+/* Header styles */
+.header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #ffffff; /* White header text */
+}
+
+/* Grid styles for modern look */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card styles - clean, modern */
+.card {
+  background-color: #2a2a2a; /* Darker card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Card content */
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Avatar styles */
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Button styles */
+.button {
+  background-color: #164c3e; /* Dark Green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1f6f56; /* Lighter Green on hover */
+}
+
+.disabled-button {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Your Bets section */
+.bets-section {
+  background-color: #2a2a2a; /* Match dark background */
+  color: #cccccc; /* Light gray text for secondary sections */
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
