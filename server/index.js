@@ -7,7 +7,13 @@ const execRoutes = require('./routes/execModel');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://gol-gatam.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 const uri = "mongodb+srv://hackasolclient:xAt9qV3IRBGk1eZL@hack-a-sol.pc9l3.mongodb.net/?retryWrites=true&w=majority&appName=hack-a-sol";
